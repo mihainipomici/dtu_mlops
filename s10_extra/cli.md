@@ -38,7 +38,7 @@ as an example, `git` is the main command but it has multiple subcommands: `push`
 take their own arguments. This kind of second CLI with subcommands is somewhat possible to do using only `argparse`,
 however it requires a bit of hacks.
 
-You could of cause ask the question why we at all would like to have the possibility of defining such CLI. The main
+You could of course ask the question why we at all would like to have the possibility of defining such CLI. The main
 argument here is to give users of our code a single entrypoint to interact with our application instead of having
 multiple scripts. As long as all subcommands are proper documented, then our interface should be simple to interact
 with (again think `git` where each subcommand can be given the `-h` arg to get specific help).
@@ -50,6 +50,9 @@ the only package for doing this, and of other excellent frameworks for creating 
 mention [Typer](https://typer.tiangolo.com/).
 
 ## Exercises
+
+{: .highlight }
+> [Exercise files](https://github.com/SkafteNicki/dtu_mlops/tree/main/s10_extra/exercise_files)
 
 1. Install [click](https://click.palletsprojects.com/en/8.1.x/)
 

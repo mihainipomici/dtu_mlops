@@ -40,7 +40,7 @@ to this:
   go over all dependencies in the beginning checking for compatibility before installing anything.
 * `pip` is bound to a specific python version, whereas `conda` can manage multiple python versions at the same time
 
-It is therefore highly recommended to use conda enviroments compared to python virtual enviroments. However, does that
+It is therefore highly recommended to use conda environments compared to python virtual environments. However, does that
 mean that you cannot mix `pip install` and `conda install`? If you are using `conda>=4.6` then you should be fairly
 safe, because it has build in compatible layer. In general, what works for me
 
@@ -76,14 +76,14 @@ compared to other environment managers.
    current environment (HINT: check the `conda_cheatsheet.pdf` file in the `exercise_files` folder).
 
    1. How do you easily export this list to a text file? Do this, and make sure you export it to
-   a file called `enviroment.yml`.
+      a file called `enviroment.txt`.
 
    2. Finally, inspect the file to see what is in it.
 
-   3. The `enviroment.yml` file you have created is one way to secure *reproducibility* between users, because
-   anyone should be able to get an exact copy of you enviroment if they have your `enviroment.yml` file.
-   Try creating a new environment directly from you `enviroment.yml` file and check that the packages being
-   installed exactly matches what you originally had.
+   3. The `enviroment.txt` file you have created is one way to secure *reproducibility* between users, because
+      anyone should be able to get an exact copy of you environment if they have your `enviroment.txt` file.
+      Try creating a new environment directly from you `enviroment.txt` file and check that the packages being
+      installed exactly matches what you originally had.
 
 5. Which `conda` commando gives you a list of all the environments that you have created?
 
@@ -108,3 +108,7 @@ compared to other environment managers.
    2. Either try out `pipreqs` on one of your own projects or try it out on some other online project.
       What does the `requirements.txt` file `pipreqs` produce look like compared to the files produces
       by either `pip` or `conda`.
+
+This ends the module on setting up virtual environments. While the methods mentioned in the exercises are great ways
+to construct requirements files automatic, sometimes it is just easier to manually sit down and create the files as you
+in that way secure that only the most necessary requirements are actually installed when creating a new environment.
